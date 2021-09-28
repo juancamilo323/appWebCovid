@@ -1,0 +1,73 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel= "icon" href= '{% static "appWebCovidApp/img/icon.png" %}' type= "image/png">
+    <link type='text/css' rel='stylesheet' href='{% static "appWebCovidApp/css/base.css" %}'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+    <!-- Header -->
+
+    <header>
+        <div class= "menu">
+            <a href="{% url 'Home' %}"><img src= '{% static "appWebCovidApp/img/logo.png" %}' alt="" id= "imagen-logo"></a>
+            <nav id= "nav-header">
+                <ul>
+                    <li><a href="{% url 'Home' %}" class= "enlaces-header">Inicio</a></li>
+                    <li><a href="{% url 'Contagio' %}" class= "enlaces-header">Ingresar contagio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    {% block content %}
+
+    {% endblock %}
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>Control de covid-19</h3>
+            <ul class="social">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class= "footer-bottom">
+            <p>copyright &copy;2021 pagina diseñada por <span>Camilo</span> y <span>Sergio</span></p>
+        </div>
+    </footer>
+</body>
+</html>
+
+<!--
+
+<header>
+    <div class= "menu">
+        <img src='{% static "appWebCovidApp/img/logo.png" %}' alt="">
+    </div>
+</header>
+
+<nav class= "navBarClass">
+    <div class= "navBarClass" id=divDos>
+        <ul id= "mainList">
+            <li class="mainId">
+                <a class= "nav-link" href="{% url 'Home' %}">Inicio</a>
+            </li>
+            <li class="mainId">
+                <a class= "nav-link" href="{% url 'Contagio' %}">Ingresar contagio</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+-->
