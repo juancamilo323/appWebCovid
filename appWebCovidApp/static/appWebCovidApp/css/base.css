@@ -7,7 +7,7 @@
 body{
     background: #31363C;
     color: white;
-    font-family:     Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 
     header{
@@ -20,7 +20,7 @@ body{
     }
 
         .menu{
-            width: 90%;
+            width: 70%;
             margin: 0 auto;
         }
 

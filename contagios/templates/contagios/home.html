@@ -1,0 +1,32 @@
+{% extends "appWebCovidApp/base.html" %}
+
+{% load static %}
+
+{% block title %} CovidApp {% endblock %}
+
+{% block content %}
+
+    <!-- Heading -->
+    <section class="page-section">
+        <div class= "filtro-class">
+            <p class="colombia-total">Total de contagios en el país: {{colombia.count}}</p>
+            <div class="filtro">
+                <p id= "titulo-filtro">Buscar departamento</p>
+                <select name="departamento" id="select-departamento">
+                    <option selected disabled value="">Selecciona una opción</option>
+                    {% for departamentos in departamento%}
+                        <option value="{{departamentos.nombre_departamento}}">{{departamentos.nombre_departamento}}</option>
+                    {% endfor %}
+                </select>
+                <script type="text/javascript">
+                    var url = document.getElementById('select-departamento');
+                    url.onchange = function(){
+                        var userOption = this.options[this.selectedIndex];
+                        window.open(userOption.value, "_self");
+                    }
+                </script>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

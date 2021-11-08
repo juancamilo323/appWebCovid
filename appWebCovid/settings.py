@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'appWebCovid.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'controlcovid',
+        'NAME': 'contagioscolombia',
         'USER': 'postgres',
         'PASSWORD': '12345',
         'HOST': '127.0.0.1',

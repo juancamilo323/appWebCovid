@@ -1,0 +1,51 @@
+.page-section{
+    width: 60%;
+    margin: 0 auto;
+}
+
+    .filtro-class{
+        background: #26292E;
+        margin: 20px 0px;
+        border-radius: 4px;
+        padding: 15px 0px;
+    }
+
+        .colombia-total{
+            font-size: 32px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .filtro{
+            padding: 20px 0px 0px 0px;
+            text-align: center;
+        }
+            #titulo-filtro{
+                font-size: 20px;
+            }
+
+            #select-departamento{
+                margin: 15px;
+                padding: 8px 20px;
+                border-radius: 5px;
+                background: #31363C;
+                color: white;
+                border: #1A1B1E 1px solid;
+                cursor: pointer;
+                height:50px;
+            }
+
+            #select-departamento:focus,
+            #select-departamento:hover{
+                outline: none;
+            }
+
+        #cantidad{
+            font-size: 24px;
+        }
+
+
+footer{
+    position:fixed;
+    bottom: 0;  
+}
